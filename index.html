@@ -3,63 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First website</title>
-    <link rel="stylesheet" href = "styles.css">
+    <title>My first website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+
     <header>
-    <h1>Welcome to my first website !</h1>
-    <!--<a href="https://www.google.com">
-        Find me in  google
-    </a>
--->
+        <h1>Welcome to my first website!</h1>
+        <a href="contact.html">Contact me</a>
     </header>
-
-
-    <a href="contact.html" > 
-    Contac me 
-    </a>
+    
+   
     
 
-<br> 
-    <article>   <h3>This is my first blog post</h3>
-        <p>
-        This is content to my first post
-        </p>
-        <br></article>
- <article>
-    <h3>This is my second blog post</h3>
-    <p>
-    This is <mark> content</mark> to my second post<sup> *</sup>
-    </p>
-    <br>
- </article>
+    <div id="main-content">
 
-
-
-<article>
-    <h3>This is my third blog post</h3>
-    <p>
-    This is content to my third post
-    </p>
-    <br>    <!-- this tag is use to add new line-->
-    <br>
+        <section id="articles">
+            <article>
+                <h3>This is my first blog post</h3>
+                <p>This is the content of my first blog post</p>
+                <!-- width of content area only -->
+            </article>
+            
+       
     
-    <small>Another sentens <sup class = "sub_element" style = "color: aquamarine;"> * </sup></small>
-    <br>
-    <br>
-</article>
+            <article>
+                <h3>This is my second blog post</h3>
+                <p>This is the content of my second blog &lt;something&gt; post</p>
+            </article>
+            
+            
+    
+            <article>
+                <h3>This is my third blog post</h3>
+                <p>This is the <mark>content</mark> of my third blog post. <br> Continue the content after <i>breaking line</i>. <sup class="sup_element">*</sup></p>
+                <small><sup class="sup_element">*</sup>Another sentence</small>
+            </article>
 
 
-<footer>
-    <div>
-        Footer Area. &copy; Copyright <b>Me</b> & my Tutor
-        
+        </section>
+
+    <div id="skills"> <!-- div is the block element -->
+       <b style= " font-size: 34px; font-weight: 900; color: lawngreen;">My skills</b>
+
+        <table>
+            <tr>
+                <th>Technology</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Good</td>
+            </tr>
+        </table>
+
+    </div>
+   
+
     </div>
 
-</footer>
+    
 
+    <footer>
+        <div >
+            Footer area. &copy; <strong>Me</strong> & <b>My Tutor</b>
+        </div>
+    </footer>
 
-<script src="scripts.js"></script>
+    <!-- Content not wrapped in any tag (barely used in reality) -->
+    <script src="scripts.js"></script>
 </body>
 </html>
